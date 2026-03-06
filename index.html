@@ -4,378 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description"
-        content="Somesula Sariyu - Senior Cybersecurity Analyst & Full-stack Developer. Specialized in vulnerability management, security analysis, and building secure web applications.">
-    <meta name="keywords"
-        content="Somesula Sariyu, Cybersecurity Analyst, Security Portfolio, Vulnerability Management, Bug Bounty, Web Security, React Developer, Node.js Security">
-    <meta name="author" content="Somesula Sariyu">
-    <meta name="theme-color" content="#0a0e17">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yuvaraj-dudukuru.github.io/Sariyu_portfolio/">
-    <meta property="og:title" content="Somesula Sariyu | Cybersecurity Analyst & Developer Portfolio">
-    <meta property="og:description"
-        content="Explore my cybersecurity projects, security analysis expertise, and developer portfolio. Specializing in secure systems and vulnerability management.">
-    <meta property="og:image" content="https://placehold.co/1200x630/0a0e17/00abf0?text=Sariyu+Portfolio">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yuvaraj-dudukuru.github.io/Sariyu_portfolio/">
-    <meta property="twitter:title" content="Somesula Sariyu | Cybersecurity Analyst & Developer Portfolio">
-    <meta property="twitter:description"
-        content="Explore my cybersecurity projects, security analysis expertise, and developer portfolio.">
-    <meta property="twitter:image" content="https://placehold.co/1200x630/0a0e17/00abf0?text=Sariyu+Portfolio">
-
     <title>Somesula Sariyu | Cybersecurity Analyst & Developer</title>
-
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Somesula Sariyu",
-      "jobTitle": "Cybersecurity Analyst & Developer",
-      "url": "https://yuvaraj-dudukuru.github.io/Sariyu_portfolio/",
-      "sameAs": [
-        "https://linkedin.com/in/yuvaraj-dudukuru",
-        "https://github.com/yuvaraj-dudukuru"
-      ]
-    }
-    </script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header class="header" id="header">
-        <a href="#home" class="logo" aria-label="Home">Sariyu</a>
-
-        <div class="header-actions">
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
-                <i class="bx bx-moon"></i>
-            </button>
-
-            <button class="menu-toggle" id="menu-icon" aria-label="Toggle navigation menu" aria-expanded="false">
-                <i class="bx bx-menu"></i>
-            </button>
-        </div>
-
-        <nav class="navbar" id="navbar" aria-label="Main navigation">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="#contact" class="nav-link">Contact</a>
-            <span class="active-nav" aria-hidden="true"></span>
+    <!-- header design -->
+    <header class="header">
+        <a href="#home" class="logo">Sariyu</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="hero-greeting">Hi, I'm</p>
-                <h1>Somesula <span>Sariyu</span></h1>
-                <div class="hero-title">
-                    <h2>Cybersecurity Analyst & Developer</h2>
-                </div>
-                <p class="hero-tagline">
-                    Passionate about vulnerability management, security analysis, and building secure systems.
-                    Constantly learning and staying current with industry threats and best practices.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Hire Me</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
-                </div>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, I'm</h3>
+            <h1>Somesula Sariyu</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Passionate about vulnerability management, security analysis, and building secure systems. Constantly
+                learning and staying current with industry threats.</p>
+            <div class="social-media">
+                <a href="https://github.com/yuvaraj-dudukuru" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com/in/yuvaraj-dudukuru" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:sariyu@example.com"><i class='bx bx-envelope'></i></a>
             </div>
-            <div class="hero-social">
-                <a href="https://www.linkedin.com/in/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
-                    class="social-link" aria-label="LinkedIn">
-                    <i class="bx bxl-linkedin"></i>
-                </a>
-                <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
-                    class="social-link" aria-label="GitHub">
-                    <i class="bx bxl-github"></i>
-                </a>
-                <a href="mailto:sariyu@example.com" class="social-link" aria-label="Email">
-                    <i class="bx bx-envelope"></i>
-                </a>
-            </div>
-        </section>
+            <a href="assets/resume.pdf" class="btn" download>Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="assets/profile.jpg" alt="Somesula Sariyu Profile">
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section class="about" id="about">
-            <h2 class="section-heading">About <span>Me</span></h2>
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="assets/profile.jpg" alt="Somesula Sariyu - Cybersecurity professional" width="400"
-                        height="400" loading="lazy" style="object-fit: cover; object-position: center top;">
-                </div>
-                <div class="about-content">
-                    <h3>Cybersecurity Enthusiast</h3>
-                    <p>
-                        I'm a cybersecurity student passionate about identifying and mitigating security risks.
-                        My interests span <strong>Bug Bounty Programs</strong>, <strong>Network Security</strong>,
-                        and <strong>Vulnerability Management</strong>. I enjoy learning from experienced professionals
-                        and contributing to safer digital ecosystems.
-                    </p>
-                    <p>
-                        I'm actively exploring web application security, penetration testing fundamentals,
-                        and secure coding practices. Let's connect and discuss the latest developments in cybersecurity.
-                    </p>
-                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
-                </div>
-            </div>
-        </section>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/profile.jpg" alt="About Somesula Sariyu">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Cybersecurity Enthusiast</h3>
+            <p>I'm a cybersecurity student passionate about identifying and mitigating security risks. My interests span
+                Bug Bounty Programs, Network Security, and Vulnerability Management. I enjoy learning from experienced
+                professionals and contributing to safer digital ecosystems. I'm actively exploring web application
+                security, penetration testing fundamentals, and secure coding practices.</p>
+            <a href="#projects" class="btn">Read More</a>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section class="skills" id="skills">
-            <h2 class="section-heading">My <span>Skills</span></h2>
-            <div class="skills-grid">
-                <div class="skills-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-item">
-                        <span class="skill-name">HTML</span>
-                        <div class="skill-bar"><span class="skill-progress" data-level="70"></span></div>
-                        <span class="skill-percent">70%</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">CSS</span>
-                        <div class="skill-bar"><span class="skill-progress" data-level="60"></span></div>
-                        <span class="skill-percent">60%</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">JavaScript</span>
-                        <div class="skill-bar"><span class="skill-progress" data-level="50"></span></div>
-                        <span class="skill-percent">50%</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Java</span>
-                        <div class="skill-bar"><span class="skill-progress" data-level="60"></span></div>
-                        <span class="skill-percent">60%</span>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Frameworks & Tools</h3>
-                    <div class="skill-item">
-                        <span class="skill-name">Git</span>
-                        <div class="skill-bar"><span class="skill-progress" data-level="65"></span></div>
-                        <span class="skill-percent">65%</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Linux</span>
-                        <div class="skill-bar"><span class="skill-progress" data-level="55"></span></div>
-                        <span class="skill-percent">55%</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Wireshark</span>
-                        <div class="skill-bar"><span class="skill-progress" data-level="50"></span></div>
-                        <span class="skill-percent">50%</span>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Security & Databases</h3>
-                    <div class="skill-item">
-                        <span class="skill-name">Network Security</span>
-                        <div class="skill-bar"><span class="skill-progress" data-level="60"></span></div>
-                        <span class="skill-percent">60%</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">SQL Basics</span>
-                        <div class="skill-bar"><span class="skill-progress" data-level="55"></span></div>
-                        <span class="skill-percent">55%</span>
-                    </div>
-                </div>
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Proficient in HTML, CSS, JavaScript, and Java. Capable of building responsive and dynamic web
+                    applications with modern frameworks.</p>
+                <a href="#" class="btn">Read More</a>
             </div>
-        </section>
+            <div class="skills-box">
+                <i class='bx bx-shield-quarter'></i>
+                <h3>Network Security</h3>
+                <p>Knowledgeable in Wireshark, Linux, and network vulnerability assessments. Focused on securing digital
+                    infrastructure and mitigating threats.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-data'></i>
+                <h3>Tools & Databases</h3>
+                <p>Experienced in using Git for version control and SQL basics for data management, ensuring robust and
+                    efficient system operations.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section class="projects" id="projects">
-            <h2 class="section-heading">My <span>Projects</span></h2>
-            <div class="project-filters" role="group" aria-label="Filter projects by technology">
-                <button type="button" class="filter-btn active" data-filter="all">All</button>
-                <button type="button" class="filter-btn" data-filter="html">HTML</button>
-                <button type="button" class="filter-btn" data-filter="css">CSS</button>
-                <button type="button" class="filter-btn" data-filter="javascript">JavaScript</button>
-            </div>
-            <div class="projects-grid">
-                <article class="project-card" data-tech="javascript open-ai">
-                    <div class="project-image">
-                        <img src="https://placehold.co/600x400/112e42/00abf0?text=Career+Co-Pilot"
-                            alt="Career Co-Pilot project screenshot" width="600" height="400" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3>Career Co-Pilot</h3>
-                        <p>An AI-powered job application assistant that optimizes resumes and provides interview
-                            preparation based on specific job descriptions.</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>OpenAI API</span>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
-                                aria-label="View Career Co-Pilot on GitHub">
-                                <i class="bx bxl-github"></i> Code
-                            </a>
-                            <a href="#" aria-label="View Career Co-Pilot live demo">Live Demo</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card" data-tech="javascript node">
-                    <div class="project-image">
-                        <img src="https://placehold.co/600x400/112e42/00abf0?text=Chat+App"
-                            alt="Real-time Chat Application project screenshot" width="600" height="400" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3>Real-time Chat App</h3>
-                        <p>Secure, real-time messaging platform with end-to-end encryption concepts and private room
-                            creation using WebSocket technology.</p>
-                        <div class="project-tech">
-                            <span>Node.js</span>
-                            <span>Socket.io</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
-                                aria-label="View Chat App on GitHub">
-                                <i class="bx bxl-github"></i> Code
-                            </a>
-                            <a href="#" aria-label="View Chat App live demo">Live Demo</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Experience / Education Section -->
-        <section class="experience" id="experience">
-            <h2 class="section-heading">Experience & <span>Education</span></h2>
-            <div class="experience-grid">
-                <div class="experience-column">
-                    <h3><i class="bx bxs-graduation"></i> Education</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-year"><i class="bx bxs-calendar"></i> 2021 - 2025</span>
-                                <h4>B.Tech - CSE (Cybersecurity)</h4>
-                                <p>St. Mary's Engineering College</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-year"><i class="bx bxs-calendar"></i> 2019 - 2021</span>
-                                <h4>Intermediate - MPC</h4>
-                                <p>St. Anna's Junior College</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-year"><i class="bx bxs-calendar"></i> 2019</span>
-                                <h4>10th Grade</h4>
-                                <p>De Paul English Medium High School</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="experience-column">
-                    <h3><i class="bx bxs-briefcase"></i> Experience</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-year"><i class="bx bxs-calendar"></i> 2024 - Present</span>
-                                <h4>Cybersecurity Student</h4>
-                                <p>Actively pursuing security certifications and hands-on projects in vulnerability
-                                    assessment and secure development.</p>
-                            </div>
-                        </div>
-                    </div>
+    <!-- projects section design -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="https://placehold.co/600x400/112e42/0ef?text=Career+Co-Pilot" alt="Career Co-Pilot">
+                <div class="projects-layer">
+                    <h4>Career Co-Pilot</h4>
+                    <p>An AI-powered job application assistant that optimizes resumes and provides interview prep.</p>
+                    <p class="tech-stack">JavaScript · OpenAI API · CSS3</p>
+                    <a href="https://github.com/yuvaraj-dudukuru" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <div class="resume-section">
-                <a href="assets/resume.pdf" class="btn btn-secondary resume-btn" aria-label="Download resume" download>
-                    <i class="bx bx-download"></i> Download Resume (PDF)
-                </a>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <h2 class="section-heading">Contact <span>Me</span></h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <a href="mailto:sariyu@example.com" class="contact-link">
-                        <i class="bx bx-envelope"></i>
-                        <span>sariyu@example.com</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
-                        class="contact-link">
-                        <i class="bx bxl-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
-                        class="contact-link">
-                        <i class="bx bxl-github"></i>
-                        <span>GitHub</span>
-                    </a>
+            <div class="projects-box">
+                <img src="https://placehold.co/600x400/112e42/0ef?text=Chat+App" alt="Real-time Chat App">
+                <div class="projects-layer">
+                    <h4>Real-time Chat App</h4>
+                    <p>Secure messaging platform with end-to-end encryption concepts and private room creation.</p>
+                    <p class="tech-stack">Node.js · Socket.io · JS</p>
+                    <a href="https://github.com/yuvaraj-dudukuru" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
-                <form class="contact-form" action="#" method="post" aria-label="Contact form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required
-                                autocomplete="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required
-                                autocomplete="email">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Your phone number"
-                                autocomplete="tel">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
     <footer class="footer">
-        <p>&copy; 2025 Somesula Sariyu. All rights reserved.</p>
-        <a href="#home" class="back-to-top" aria-label="Back to top">
-            <i class="bx bx-up-arrow-alt"></i>
-        </a>
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Somesula Sariyu | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
     </footer>
 
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- custom js -->
     <script src="js/script.js"></script>
 </body>
 
