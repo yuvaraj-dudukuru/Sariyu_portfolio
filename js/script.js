@@ -10,8 +10,57 @@
     const menuToggle = document.getElementById('menu-icon');
     const navbar = document.getElementById('navbar');
     const header = document.getElementById('header');
+    const themeToggle = document.getElementById('theme-toggle');
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section[id]');
+
+    /**
+     * Theme Toggle logic
+     */
+    function initTheme() {
+        if (!themeToggle) return;
+
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+    }
+
+    function updateThemeIcon(theme) {
+        const icon = themeToggle.querySelector('i');
+        if (icon) {
+            icon.className = theme === 'dark' ? 'bx bx-sun' : 'bx bx-moon';
+        }
+    }
+
+    /**
+     * Scroll Reveal Animations
+     */
+    function initScrollReveal() {
+        const revealElements = document.querySelectorAll('.section-heading, .about-grid, .skills-category, .project-card, .timeline-item, .contact-wrapper');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealElements.forEach(el => {
+            el.classList.add('reveal-hidden');
+            observer.observe(el);
+        });
+    }
 
     /**
      * Mobile menu toggle
@@ -195,9 +244,43 @@
     }
 
     /**
+     * GitHub API Integration
+     */
+    async function initGitHubData() {
+        const username = 'yuvaraj-dudukuru';
+        const projectCards = document.querySelectorAll('.project-card');
+
+        try {
+            const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=10`);
+            if (!response.ok) throw new Error('GitHub API failed');
+
+            const repos = await response.ok ? await response.json() : [];
+
+            // Map real stars/forks to cards if applicable
+            projectCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const matchedRepo = repos.find(repo => repo.name.toLowerCase().includes(title.replace(/\s/g, '-')));
+
+                if (matchedRepo) {
+                    const stats = document.createElement('div');
+                    stats.className = 'project-stats';
+                    stats.innerHTML = `
+                        <span><i class="bx bx-star"></i> ${matchedRepo.stargazers_count}</span>
+                        <span><i class="bx bx-git-repo-forked"></i> ${matchedRepo.forks_count}</span>
+                    `;
+                    card.querySelector('.project-content').appendChild(stats);
+                }
+            });
+        } catch (error) {
+            console.warn('GitHub data fetch skipped:', error.message);
+        }
+    }
+
+    /**
      * Initialize all modules
      */
     function init() {
+        initTheme();
         initMobileMenu();
         initStickyHeader();
         initActiveNav();
@@ -206,6 +289,8 @@
         initLazyLoad();
         initProjectFilter();
         initContactForm();
+        initScrollReveal();
+        initGitHubData();
     }
 
     if (document.readyState === 'loading') {

@@ -5,22 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Somesula Sariyu - Cybersecurity Analyst & Developer Portfolio. Explore projects, skills, and experience in security analysis, vulnerability management, and web development.">
-    <meta name="keywords" content="Somesula Sariyu, Cybersecurity, Security Analyst, Portfolio, Web Developer, Vulnerability Management, Bug Bounty">
+    <meta name="description"
+        content="Somesula Sariyu - Senior Cybersecurity Analyst & Full-stack Developer. Specialized in vulnerability management, security analysis, and building secure web applications.">
+    <meta name="keywords"
+        content="Somesula Sariyu, Cybersecurity Analyst, Security Portfolio, Vulnerability Management, Bug Bounty, Web Security, React Developer, Node.js Security">
     <meta name="author" content="Somesula Sariyu">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Somesula Sariyu | Cybersecurity Analyst Portfolio">
-    <meta property="og:description" content="Cybersecurity student specializing in vulnerability management and security analysis. View my projects and connect.">
+    <meta name="theme-color" content="#0a0e17">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    
+    <meta property="og:url" content="https://yuvaraj-dudukuru.github.io/Sariyu_portfolio/">
+    <meta property="og:title" content="Somesula Sariyu | Cybersecurity Analyst & Developer Portfolio">
+    <meta property="og:description"
+        content="Explore my cybersecurity projects, security analysis expertise, and developer portfolio. Specializing in secure systems and vulnerability management.">
+    <meta property="og:image" content="https://placehold.co/1200x630/0a0e17/00abf0?text=Sariyu+Portfolio">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yuvaraj-dudukuru.github.io/Sariyu_portfolio/">
+    <meta property="twitter:title" content="Somesula Sariyu | Cybersecurity Analyst & Developer Portfolio">
+    <meta property="twitter:description"
+        content="Explore my cybersecurity projects, security analysis expertise, and developer portfolio.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/0a0e17/00abf0?text=Sariyu+Portfolio">
+
     <title>Somesula Sariyu | Cybersecurity Analyst & Developer</title>
-    
+
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Somesula Sariyu",
+      "jobTitle": "Cybersecurity Analyst & Developer",
+      "url": "https://yuvaraj-dudukuru.github.io/Sariyu_portfolio/",
+      "sameAs": [
+        "https://linkedin.com/in/yuvaraj-dudukuru",
+        "https://github.com/yuvaraj-dudukuru"
+      ]
+    }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
@@ -29,9 +60,17 @@
 
     <header class="header" id="header">
         <a href="#home" class="logo" aria-label="Home">Sariyu</a>
-        <button class="menu-toggle" id="menu-icon" aria-label="Toggle navigation menu" aria-expanded="false">
-            <i class="bx bx-menu"></i>
-        </button>
+
+        <div class="header-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="bx bx-moon"></i>
+            </button>
+
+            <button class="menu-toggle" id="menu-icon" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="bx bx-menu"></i>
+            </button>
+        </div>
+
         <nav class="navbar" id="navbar" aria-label="Main navigation">
             <a href="#home" class="nav-link active">Home</a>
             <a href="#about" class="nav-link">About</a>
@@ -53,7 +92,7 @@
                     <h2>Cybersecurity Analyst & Developer</h2>
                 </div>
                 <p class="hero-tagline">
-                    Passionate about vulnerability management, security analysis, and building secure systems. 
+                    Passionate about vulnerability management, security analysis, and building secure systems.
                     Constantly learning and staying current with industry threats and best practices.
                 </p>
                 <div class="hero-buttons">
@@ -62,10 +101,12 @@
                 </div>
             </div>
             <div class="hero-social">
-                <a href="https://www.linkedin.com/in/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
+                    class="social-link" aria-label="LinkedIn">
                     <i class="bx bxl-linkedin"></i>
                 </a>
-                <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
+                    class="social-link" aria-label="GitHub">
                     <i class="bx bxl-github"></i>
                 </a>
                 <a href="mailto:sariyu@example.com" class="social-link" aria-label="Email">
@@ -79,18 +120,19 @@
             <h2 class="section-heading">About <span>Me</span></h2>
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="https://placehold.co/400x400/112e42/00abf0?text=Sariyu" alt="Somesula Sariyu - Cybersecurity professional" width="400" height="400" loading="lazy">
+                    <img src="https://placehold.co/400x400/112e42/00abf0?text=Sariyu"
+                        alt="Somesula Sariyu - Cybersecurity professional" width="400" height="400" loading="lazy">
                 </div>
                 <div class="about-content">
                     <h3>Cybersecurity Enthusiast</h3>
                     <p>
-                        I'm a cybersecurity student passionate about identifying and mitigating security risks. 
-                        My interests span <strong>Bug Bounty Programs</strong>, <strong>Network Security</strong>, 
-                        and <strong>Vulnerability Management</strong>. I enjoy learning from experienced professionals 
+                        I'm a cybersecurity student passionate about identifying and mitigating security risks.
+                        My interests span <strong>Bug Bounty Programs</strong>, <strong>Network Security</strong>,
+                        and <strong>Vulnerability Management</strong>. I enjoy learning from experienced professionals
                         and contributing to safer digital ecosystems.
                     </p>
                     <p>
-                        I'm actively exploring web application security, penetration testing fundamentals, 
+                        I'm actively exploring web application security, penetration testing fundamentals,
                         and secure coding practices. Let's connect and discuss the latest developments in cybersecurity.
                     </p>
                     <a href="#contact" class="btn btn-primary">Let's Talk</a>
@@ -169,38 +211,49 @@
                 <button type="button" class="filter-btn" data-filter="javascript">JavaScript</button>
             </div>
             <div class="projects-grid">
-                <article class="project-card" data-tech="html css javascript">
+                <article class="project-card" data-tech="javascript open-ai">
                     <div class="project-image">
-                        <img src="https://placehold.co/600x400/112e42/00abf0?text=Portfolio" alt="Personal Portfolio Website project screenshot" width="600" height="400" loading="lazy">
+                        <img src="https://placehold.co/600x400/112e42/00abf0?text=Career+Co-Pilot"
+                            alt="Career Co-Pilot project screenshot" width="600" height="400" loading="lazy">
                     </div>
                     <div class="project-content">
-                        <h3>Personal Portfolio</h3>
-                        <p>Modern, responsive portfolio website showcasing skills, projects, and contact information. Built with semantic HTML, CSS, and vanilla JavaScript.</p>
+                        <h3>Career Co-Pilot</h3>
+                        <p>An AI-powered job application assistant that optimizes resumes and provides interview
+                            preparation based on specific job descriptions.</p>
                         <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
                             <span>JavaScript</span>
+                            <span>OpenAI API</span>
+                            <span>CSS3</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/yuvaraj-dudukuru/Sariyu_portfolio" target="_blank" rel="noopener noreferrer" aria-label="View Portfolio on GitHub">
+                            <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
+                                aria-label="View Career Co-Pilot on GitHub">
                                 <i class="bx bxl-github"></i> Code
                             </a>
-                            <a href="#" aria-label="View Portfolio live demo">Live Demo</a>
+                            <a href="#" aria-label="View Career Co-Pilot live demo">Live Demo</a>
                         </div>
                     </div>
                 </article>
-                <article class="project-card" data-tech="tbd">
+                <article class="project-card" data-tech="javascript node">
                     <div class="project-image">
-                        <img src="https://placehold.co/600x400/112e42/00abf0?text=Project+2" alt="Placeholder for future project" width="600" height="400" loading="lazy">
+                        <img src="https://placehold.co/600x400/112e42/00abf0?text=Chat+App"
+                            alt="Real-time Chat Application project screenshot" width="600" height="400" loading="lazy">
                     </div>
                     <div class="project-content">
-                        <h3>Project Coming Soon</h3>
-                        <p>Working on exciting cybersecurity and development projects. Check back soon for updates.</p>
+                        <h3>Real-time Chat App</h3>
+                        <p>Secure, real-time messaging platform with end-to-end encryption concepts and private room
+                            creation using WebSocket technology.</p>
                         <div class="project-tech">
-                            <span>TBD</span>
+                            <span>Node.js</span>
+                            <span>Socket.io</span>
+                            <span>JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile">GitHub</a>
+                            <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
+                                aria-label="View Chat App on GitHub">
+                                <i class="bx bxl-github"></i> Code
+                            </a>
+                            <a href="#" aria-label="View Chat App live demo">Live Demo</a>
                         </div>
                     </div>
                 </article>
@@ -212,7 +265,7 @@
             <h2 class="section-heading">Experience & <span>Education</span></h2>
             <div class="experience-grid">
                 <div class="experience-column">
-                    <h3>Education</h3>
+                    <h3><i class="bx bxs-graduation"></i> Education</h3>
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
@@ -241,20 +294,25 @@
                     </div>
                 </div>
                 <div class="experience-column">
-                    <h3>Experience</h3>
+                    <h3><i class="bx bxs-briefcase"></i> Experience</h3>
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <span class="timeline-year"><i class="bx bxs-calendar"></i> 2024 - Present</span>
                                 <h4>Cybersecurity Student</h4>
-                                <p>Actively pursuing security certifications and hands-on projects in vulnerability assessment and secure development.</p>
+                                <p>Actively pursuing security certifications and hands-on projects in vulnerability
+                                    assessment and secure development.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn btn-secondary resume-btn" aria-label="Download resume">Download Resume</a>
+            <div class="resume-section">
+                <a href="assets/resume.pdf" class="btn btn-secondary resume-btn" aria-label="Download resume" download>
+                    <i class="bx bx-download"></i> Download Resume (PDF)
+                </a>
+            </div>
         </section>
 
         <!-- Contact Section -->
@@ -266,11 +324,13 @@
                         <i class="bx bx-envelope"></i>
                         <span>sariyu@example.com</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <a href="https://www.linkedin.com/in/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
+                        class="contact-link">
                         <i class="bx bxl-linkedin"></i>
                         <span>LinkedIn</span>
                     </a>
-                    <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <a href="https://github.com/yuvaraj-dudukuru" target="_blank" rel="noopener noreferrer"
+                        class="contact-link">
                         <i class="bx bxl-github"></i>
                         <span>GitHub</span>
                     </a>
@@ -279,17 +339,20 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+                            <input type="text" id="name" name="name" placeholder="Your name" required
+                                autocomplete="name">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required
+                                autocomplete="email">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Your phone number" autocomplete="tel">
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number"
+                                autocomplete="tel">
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
