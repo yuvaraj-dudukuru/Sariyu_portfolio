@@ -34,9 +34,12 @@
             <p>Passionate about vulnerability management, security analysis, and building secure systems. Constantly
                 learning and staying current with industry threats.</p>
             <div class="social-media">
-                <a href="https://github.com/yuvaraj-dudukuru" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://linkedin.com/in/yuvaraj-dudukuru" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="mailto:sariyu@example.com"><i class='bx bx-envelope'></i></a>
+                <a href="https://github.com/Sariyu350" target="_blank" rel="noopener" title="GitHub profile"
+                    aria-label="GitHub profile"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/somesula-sariyu-2a8090223/" target="_blank" rel="noopener"
+                    title="LinkedIn profile" aria-label="LinkedIn profile"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:sariyu@example.com" title="Email me" aria-label="Email me"><i
+                        class='bx bx-envelope'></i></a>
             </div>
             <a href="assets/resume.pdf" class="btn" download>Download CV</a>
         </div>
@@ -48,7 +51,7 @@
     <!-- about section design -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="assets/profile.jpg" alt="About Somesula Sariyu">
+            <img src="assets/WhatsApp Image 2026-03-07 at 4.15.56 AM (1).jpeg" alt="About Somesula Sariyu">
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
@@ -65,26 +68,17 @@
     <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
         <div class="skills-container">
-            <div class="skills-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>Proficient in HTML, CSS, JavaScript, and Java. Capable of building responsive and dynamic web
-                    applications with modern frameworks.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="skills-box">
-                <i class='bx bx-shield-quarter'></i>
-                <h3>Network Security</h3>
-                <p>Knowledgeable in Wireshark, Linux, and network vulnerability assessments. Focused on securing digital
-                    infrastructure and mitigating threats.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="skills-box">
-                <i class='bx bx-data'></i>
-                <h3>Tools & Databases</h3>
-                <p>Experienced in using Git for version control and SQL basics for data management, ensuring robust and
-                    efficient system operations.</p>
-                <a href="#" class="btn">Read More</a>
+            <div class="skills-list-box">
+                <ol class="skills-numbered-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Responsive Web Design</li>
+                    <li>Basic Web Development</li>
+                </ol>
             </div>
         </div>
     </section>
@@ -94,23 +88,24 @@
         <h2 class="heading">Latest <span>Projects</span></h2>
         <div class="projects-container">
             <div class="projects-box">
-                <img src="https://placehold.co/600x400/112e42/0ef?text=Career+Co-Pilot" alt="Career Co-Pilot">
+                <img src="https://placehold.co/600x400/112e42/0ef?text=My+Privacy" alt="My Privacy My Decision">
                 <div class="projects-layer">
-                    <h4>Career Co-Pilot</h4>
-                    <p>An AI-powered job application assistant that optimizes resumes and provides interview prep.</p>
-                    <p class="tech-stack">JavaScript · OpenAI API · CSS3</p>
-                    <a href="https://github.com/yuvaraj-dudukuru" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
+                    <h4>My Privacy My Decision</h4>
+                    <p>A web-based platform promoting awareness about digital privacy and user rights.</p>
+                    <p class="tech-stack">HTML · CSS · JavaScript</p>
+                    <a href="https://sariyu350.github.io/my_privacy_my_decision/" target="_blank" rel="noopener"
+                        title="Live Demo" aria-label="Live Demo"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="projects-box">
-                <img src="https://placehold.co/600x400/112e42/0ef?text=Chat+App" alt="Real-time Chat App">
+                <img src="https://placehold.co/600x400/112e42/0ef?text=Police+Complaint"
+                    alt="Police Complaint Management System">
                 <div class="projects-layer">
-                    <h4>Real-time Chat App</h4>
-                    <p>Secure messaging platform with end-to-end encryption concepts and private room creation.</p>
-                    <p class="tech-stack">Node.js · Socket.io · JS</p>
-                    <a href="https://github.com/yuvaraj-dudukuru" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
+                    <h4>Police Complaint Management System</h4>
+                    <p>A system designed to help users submit and manage police complaints digitally.</p>
+                    <p class="tech-stack">HTML · CSS · JavaScript</p>
+                    <a href="https://github.com/Sariyu350/police_complaint" target="_blank" rel="noopener"
+                        title="GitHub Repository" aria-label="GitHub Repository"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
         </div>
@@ -119,16 +114,16 @@
     <!-- contact section design -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
+        <form action="mailto:sariyu@example.com" method="POST" enctype="text/plain">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="tel" name="phone" placeholder="Mobile Number">
+                <input type="text" name="subject" placeholder="Email Subject" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -139,7 +134,7 @@
             <p>Copyright &copy; 2025 by Somesula Sariyu | All Rights Reserved.</p>
         </div>
         <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            <a href="#home" title="Back to top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 

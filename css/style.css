@@ -214,33 +214,34 @@ span {
     gap: 2rem;
 }
 
-.skills-container .skills-box {
-    flex: 1 1 30rem;
+.skills-container .skills-list-box {
+    flex: 1 1 50rem;
     background: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
+    padding: 4rem;
     border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
+    border: .2rem solid var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
+    margin: 0 auto;
+    max-width: 60rem;
 }
 
-.skills-container .skills-box:hover {
-    border-color: var(--main-color);
-    transform: scale(1.02);
+.skills-numbered-list {
+    list-style-type: decimal;
+    font-size: 2.2rem;
+    color: var(--text-color);
+    padding-left: 3rem;
+    line-height: 2;
+    text-align: left;
 }
 
-.skills-box i {
-    font-size: 7rem;
+.skills-numbered-list li {
+    margin-bottom: 1rem;
+    transition: .3s;
+}
+
+.skills-numbered-list li:hover {
     color: var(--main-color);
-}
-
-.skills-box h3 {
-    font-size: 2.6rem;
-}
-
-.skills-box p {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+    transform: translateX(1rem);
 }
 
 .projects {
